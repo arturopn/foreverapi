@@ -5,8 +5,14 @@ const sequelize = new Sequelize(
   config.DB,
   config.USER,
   config.PASSWORD,
+  config.URL,
+  config.PORT,
   {
     host: config.HOST,
+    user: config.USER,
+    password: config.PASSWORD,
+    url: config.URL,
+    port: config.PORT,
     dialect: config.dialect,
     operatorsAliases: false,
 
