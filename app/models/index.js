@@ -5,13 +5,10 @@ const sequelize = new Sequelize(
   config.DB,
   config.USER,
   config.PASSWORD,
-  config.PORT,
-  config.URL,
-  config.dialect,
   {
     host: config.HOST,
-    dialect: "mysql",
-
+    dialect: config.dialect,
+    port: config.PORT,
     pool: {
       max: config.pool.max,
       min: config.pool.min,
