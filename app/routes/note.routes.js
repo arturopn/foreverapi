@@ -11,7 +11,7 @@ module.exports = function(app) {
  
 
   // Create a new note
-  app.post("/api/notes", notes.create);
+  app.post("https://foreverapi-production.up.railway.app/api/notes", notes.create);
 
   // Retrieve all notes
   app.get("/", notes.findAll);
