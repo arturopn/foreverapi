@@ -10,7 +10,7 @@ const sequelize = new Sequelize(
   config.dialect,
   {
     host: config.HOST,
-    dialect: config.dialect,
+    dialect: "mysql",
 
     pool: {
       max: config.pool.max,
