@@ -8,23 +8,21 @@ module.exports = function(app) {
     next();
   });
 
- 
-
   // Create a new note
-  app.post("https://foreverapi-production.up.railway.app/api/notes", notes.create);
+  app.post("/api/notes", notes.create);
 
   // Retrieve all notes
-  app.get("/", notes.findAll);
+  app.get("/api/notes", notes.findAll);
 
   // Retrieve a single note with id
-  app.get("/:id", notes.findOne);
+  app.get("/api/notes/:id", notes.findOne);
 
   // Update a note with id
-  app.put("/:id", notes.update);
+  app.put("/api/notes/:id", notes.update);
 
   // Delete a note with id
-  app.delete("/:id", notes.delete);
+  app.delete("/api/notes/:id", notes.delete);
 
   // Delete all notes
-  app.delete("/", notes.deleteAll);
+  app.delete("/api/notes", notes.deleteAll);
 };
