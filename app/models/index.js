@@ -9,10 +9,6 @@ const sequelize = new Sequelize(
   config.PORT,
   {
     host: config.HOST,
-    user: config.USER,
-    password: config.PASSWORD,
-    url: config.URL,
-    port: config.PORT,
     dialect: config.dialect,
     operatorsAliases: false,
 
