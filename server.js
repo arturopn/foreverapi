@@ -28,7 +28,7 @@ db.sequelize.sync();
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to foreverus application." });
+  res.json({ message: "Welcome to foreverus application test." });
 });
 
 // routes
